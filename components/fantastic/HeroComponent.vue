@@ -17,7 +17,7 @@
     //- Herro content
     .hero__content.dev
       .picture.dev
-        SharedNetworkComponent
+        img(class="ilustration" src="~assets/images/human.svg", alt="ilustration")
       .content__title.dev
         h2.title.dev.title--cursive !Regístrate! Estamos
         h3.title.dev.title--square Contratando
@@ -65,7 +65,7 @@ export default {
   display: grid;
   // grid-template-columns: repeat(6, fr);
   grid-template-columns: repeat(1, fr);
-  grid-template-rows: 80px auto 50px;
+  grid-template-rows: 80px auto 70px;
   // presentation
   background-image: url('~assets/images/background_animate.svg');
   background-repeat: no-repeat;
@@ -150,7 +150,7 @@ export default {
 .hero__content {
   grid-row: 2;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
 
   @include media-screen-md {
@@ -158,18 +158,24 @@ export default {
   }
 
   .picture {
-    max-width: 500px;
     margin: auto;
     display: block;
 
     @include media-screen-md {
-      // width: 50%;
-      flex-grow: 1;
+      width: 50%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
+    }
+
+    .ilustration {
+      width: 100%;
+      @include media-screen-md {
+        width: 60%;
+        max-width: 250px;
+      }
     }
   }
 
@@ -186,7 +192,8 @@ export default {
 
     @include media-screen-md {
       // settings
-      max-width: 500px;
+      width: 50%;
+      max-width: none;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -236,7 +243,7 @@ export default {
 }
 .social__wrapper {
   grid-row: 3;
-  background-color: rgba(255, 255, 255, 0.486);
+  background-color: rgba(226, 246, 255, 0.486);
   .social__icon {
     margin: 0 20px;
     display: flex;
