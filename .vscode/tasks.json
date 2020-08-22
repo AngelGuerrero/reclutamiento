@@ -1,0 +1,13 @@
+{
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ],
+      "label": "npm: dev",
+      "detail": "nuxt"
+    }
+  ]
+}

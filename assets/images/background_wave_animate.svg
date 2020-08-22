@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#ffffff;display:block;z-index:1;position:relative" width="1960" height="590" preserveAspectRatio="xMidYMid" viewBox="0 0 1960 590">
+<g transform=""><linearGradient id="lg-0.7315628059864137" x1="0" x2="1" y1="0" y2="0">
+  <stop stop-color="#ff00ff" offset="0"></stop>
+  <stop stop-color="#00ffff" offset="1"></stop>
+</linearGradient><path d="" fill="url(#lg-0.7315628059864137)" opacity="0.4">
+  <animate attributeName="d" dur="10s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="0s" values="M0 0L 0 467.1001763080112Q 245 585.9568573540853  490 557.8817972604157T 980 374.09049013327694T 1470 353.1078740426508T 1960 304.907838254889L 1960 0 Z;M0 0L 0 454.8770281906129Q 245 449.09189522813136  490 425.61316306452426T 980 533.0865413679754T 1470 499.4233147728081T 1960 348.87382877371977L 1960 0 Z;M0 0L 0 446.37747366425555Q 245 540.85664012477  490 523.4380046517479T 980 478.5283186547127T 1470 411.5923497768461T 1960 330.7918787736802L 1960 0 Z;M0 0L 0 467.1001763080112Q 245 585.9568573540853  490 557.8817972604157T 980 374.09049013327694T 1470 353.1078740426508T 1960 304.907838254889L 1960 0 Z"></animate>
+</path></g>
+</svg>

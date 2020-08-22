@@ -27,17 +27,26 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: 'logodark.png',
+      },
+    ],
   },
   /*
    ** Global CSS
    */
-  css: [],
+  css: [{ src: '~assets/scss/helpers', lang: 'scss' }],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/bootstrap-vue.client.js',
+    '~/plugins/vue-carousel.client.js',
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -61,7 +70,12 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    // Global Style resources
+    '@nuxtjs/style-resources',
   ],
+  styleResources: {
+    scss: ['~assets/scss/helpers.scss'],
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
