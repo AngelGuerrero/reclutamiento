@@ -4,21 +4,21 @@
     NavbarComponent
     //- Hero content
     .hero__content.dev
-      .picture.dev
-        img(class="ilustration" src="~assets/images/human.svg", alt="ilustration")
-      .content__title.dev
-        h2.title.dev.title--cursive !Regístrate! Estamos
-        h3.title.dev.title--square Contratando
-        p.dev.information Tenemos distintas vacantes las cuales puedes aplicar directamente en
-          | nuestro sitio ú obtener más información de ellas contactando por este medio o nuestras redes sociales. 
-        button(class="snip1582") Ver vacantes
+      b-container(class="h-100 d-flex align-items-center")
+        b-row
+          b-col(class="col-12 col-md-6 mb-4")
+            img(class="picture" src="~assets/images/human.svg", alt="ilustration")
+          b-col(class="col-12 col-md-6 d-flex flex-column align-items-center")
+            h2.title(class="dev title--cursive text-center") !Regístrate! Estamos
+            h3.title(class="dev title--square text-center") Contratando
+            p.dev(class="text-justify") Tenemos distintas vacantes las cuales puedes aplicar directamente en
+              | nuestro sitio ú obtener más información de ellas contactando por este medio o nuestras redes sociales. 
+            button(class="snip1582") Ver vacantes
+
     .social__wrapper
-      .container(class="d-flex")
-        .icons(class="w-25 d-flex")
-          .social__icon
-            img(src="~assets/images/logo/icon-facebook.png", alt="alt")
-        .simple-icon(class="w-25 mx-auto")
-          b-icon(icon="mouse" class="h1")
+      b-container
+        .social__icon
+            img(class="w-100" src="~assets/images/logo/icon-facebook.png", alt="alt")
 </template>
 
 <style lang="scss" scoped>
@@ -48,29 +48,6 @@
     flex-direction: row;
   }
 
-  .picture {
-    width: 25%;
-    margin: auto;
-    display: block;
-
-    @include media-screen-md {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-
-    .ilustration {
-      width: 100%;
-      @include media-screen-md {
-        width: 60%;
-        max-width: 250px;
-      }
-    }
-  }
-
   .content__title {
     // settings
     width: 80%;
@@ -95,6 +72,26 @@
   }
 }
 
+.picture {
+  max-width: 190px;
+  margin: auto;
+  display: block;
+
+  @include media-screen-md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.ilustration {
+  width: 100%;
+  @include media-screen-md {
+    width: 60%;
+    max-width: 250px;
+  }
+}
+
 .title,
 .information {
   // max-width: 300px;
@@ -113,14 +110,14 @@
 }
 
 .social__wrapper {
-  grid-row: 3;
   .social__icon {
-    margin: 0 20px;
+    max-width: 25px;
+    margin: 20px;
     display: flex;
     align-items: center;
     cursor: pointer;
     img {
-      width: 25%;
+      width: 100%;
     }
   }
 }
