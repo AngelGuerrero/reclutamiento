@@ -5,6 +5,7 @@
     AboutComponent
     ServicesComponent
     ContactComponent
+    FooterComponent
 </template>
 
 <script>

@@ -2,7 +2,6 @@
   .hero__wrapper
     //- Navbar
     NavbarComponent
-
     //- Hero content
     .hero__content.dev
       .picture.dev
@@ -25,7 +24,7 @@
 <style lang="scss" scoped>
 .hero__wrapper {
   // settings
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   // display
   display: grid;
