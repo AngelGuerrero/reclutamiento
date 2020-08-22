@@ -21,7 +21,8 @@
       .content__title.dev
         h2.title.dev.title--cursive !Regístrate! Estamos
         h3.title.dev.title--square Contratando
-        p.dev.information Tenemos distintas vacantes las cuales puedes aplicar directamente en nuestro sitio ú obtener más información de ellas contactando por este medio o nuestras redes sociales. 
+        p.dev.information Tenemos distintas vacantes las cuales puedes aplicar directamente en
+          | nuestro sitio ú obtener más información de ellas contactando por este medio o nuestras redes sociales. 
         button(class="snip1582") Ver vacantes
     .social__wrapper
       .container(class="d-flex")
@@ -158,6 +159,7 @@ export default {
   }
 
   .picture {
+    width: 25%;
     margin: auto;
     display: block;
 
@@ -213,37 +215,16 @@ export default {
 }
 
 .information {
-  font-size: 16px;
+  font-size: 18px;
   @include media-screen-md {
     max-width: 350px;
     font-size: 18px;
   }
 }
 
-.title--cursive {
-  font-family: 'Lobster', cursive;
-  font-weight: lighter;
-  font-size: 30px;
-  color: #ea16f1;
-  @include media-screen-lg {
-    font-size: 45px;
-    text-align: center;
-  }
-}
-.title--square {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #1c1ce7;
-  @include media-screen-lg {
-    font-size: 45px;
-    text-align: center;
-  }
-}
 .social__wrapper {
   grid-row: 3;
-  background-color: rgba(226, 246, 255, 0.486);
+  // background-color: rgba(226, 246, 255, 0.486);
   .social__icon {
     margin: 0 20px;
     display: flex;

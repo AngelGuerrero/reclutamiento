@@ -2,6 +2,7 @@
   //- Landing page 'Fantastic design'
   .wrapper.dev
     HeroComponent
+    AboutComponent
 </template>
 
 <script>

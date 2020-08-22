@@ -25,6 +25,34 @@ html {
   margin: 0;
 }
 
+p {
+  font-size: 18px;
+  color: #3b3b3b;
+}
+
+.title--cursive {
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+  font-size: 30px;
+  color: #ea16f1;
+  @include media-screen-lg {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
+.title--square {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #1c1ce7;
+  @include media-screen-lg {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
 .dev {
   // border: 1px solid tomato;
 }
