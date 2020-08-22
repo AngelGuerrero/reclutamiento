@@ -15,6 +15,7 @@
         a(href="#" class="nav__item") Contacto
       li
         a(href="#" class="nav__item") Acceso
+
 </template>
 
 <style lang="scss">
