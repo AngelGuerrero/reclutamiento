@@ -3,6 +3,8 @@
   .wrapper.dev
     HeroComponent
     AboutComponent
+    ServicesComponent
+    ContactComponent
 </template>
 
 <script>
@@ -11,7 +13,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.wrapper {
-}
-</style>
+<style lang="scss"></style>

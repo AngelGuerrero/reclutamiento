@@ -5,6 +5,29 @@
   </div>
 </template>
 
+<script>
+export default {
+  head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@500&display=swap',
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Lobster&display=swap',
+      },
+    ],
+  },
+}
+</script>
+
 <style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -28,6 +51,11 @@ html {
 p {
   font-size: 18px;
   color: #3b3b3b;
+}
+
+.title {
+  color: #0110b3;
+  margin-bottom: 30px;
 }
 
 .title--cursive {
@@ -69,7 +97,7 @@ $snip1582__color: #3735c4;
   display: inline-block;
   font-family: 'BenchNine', Arial, sans-serif;
   font-size: 0.5em;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1em;
   margin: 15px 40px;
   outline: none;
@@ -126,10 +154,10 @@ $snip1582__color: #3735c4;
 // Snippet snip1555
 .snip1555 {
   // font-family: 'Muli', Arial, sans-serif;
-  // font-size: 18px;
+  // font-size: 16px;
   // letter-spacing: 1.5px;
   // line-height: 1em;
-  // margin: 15px 40px;
+  // margin: 15px 30px;
   // text-transform: uppercase;
 }
 .snip1555 li {
