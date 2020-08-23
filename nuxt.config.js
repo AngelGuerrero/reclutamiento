@@ -30,8 +30,8 @@ export default {
     link: [
       {
         rel: 'icon',
-        type: 'image/x-icon',
-        href: 'logodark.png',
+        type: 'image/icon',
+        href: '/favicon.ico',
       },
     ],
   },
