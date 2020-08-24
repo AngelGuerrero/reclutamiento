@@ -14,7 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 .vacantes__content {
-  padding-top: 120px;
+  padding-top: 50px;
   min-height: 100vh;
   background-color: rgba(33, 25, 143, 0.089);
 }

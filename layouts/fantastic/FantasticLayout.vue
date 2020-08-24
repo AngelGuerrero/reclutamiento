@@ -64,7 +64,7 @@ p {
   font-size: 30px;
   color: #ea16f1;
   @include media-screen-lg {
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
   }
 }
