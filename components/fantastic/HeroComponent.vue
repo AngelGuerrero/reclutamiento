@@ -3,7 +3,7 @@
     //- Navbar
     NavbarComponent
     //- Hero content
-    .hero__content.dev
+    .hero__content
       b-container(class="h-100 d-flex align-items-center")
         b-row
           b-col(class="col-12 col-md-6 mb-4")
@@ -11,14 +11,10 @@
           b-col(class="col-12 col-md-6 d-flex flex-column align-items-center")
             h2.title(class="dev title--cursive text-center") !Regístrate! Estamos
             h3.title(class="dev title--square text-center") Contratando
-            p.dev(class="text-justify") Tenemos distintas vacantes las cuales puedes aplicar directamente en
+            p(class="text-justify") Tenemos distintas vacantes las cuales puedes aplicar directamente en
               | nuestro sitio ú obtener más información de ellas contactando por este medio o nuestras redes sociales. 
             button(class="snip1582") Ver vacantes
 
-    .social__wrapper
-      b-container
-        .social__icon
-            img(class="w-100" src="~assets/images/logo/icon-facebook.png", alt="alt")
 </template>
 
 <style lang="scss" scoped>
@@ -106,19 +102,6 @@
   @include media-screen-md {
     max-width: 350px;
     font-size: 18px;
-  }
-}
-
-.social__wrapper {
-  .social__icon {
-    max-width: 25px;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    img {
-      width: 100%;
-    }
   }
 }
 </style>

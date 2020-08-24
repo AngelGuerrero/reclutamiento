@@ -44,8 +44,8 @@ export default {
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [
-    '~/plugins/bootstrap-vue.client.js',
-    '~/plugins/vue-carousel.client.js',
+    { src: '~/plugins/bootstrap-vue.client.js', ssr: false },
+    { src: '~/plugins/vue-carousel.client.js', ssr: false },
   ],
   /*
    ** Auto import components
@@ -64,7 +64,7 @@ export default {
    */
   modules: [
     // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt',
+    ['bootstrap-vue/nuxt', { icons: true }],
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
@@ -90,5 +90,11 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    extend(config, ctx) {
+      if (ctx.isDev) {
+        config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map'
+      }
+    },
+  },
 }

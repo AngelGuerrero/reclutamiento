@@ -23,7 +23,6 @@
   // presentation
   background-image: url('~assets/images/wave.svg');
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: bottom center;
 }
 

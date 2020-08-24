@@ -21,13 +21,9 @@
 <style lang="scss">
 .nav__wrapper {
   grid-row: 1;
-  // display
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  // position: fixed;
-  // z-index: 9;
-  // width: 100%;
   min-height: 80px;
   // presentation
   font-family: 'Baloo Tamma 2', cursive;
