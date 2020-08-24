@@ -12,7 +12,7 @@
             h2.title(class="dev title--cursive text-center") !Regístrate! Estamos
             h3.title(class="dev title--square text-center") Contratando
             p(class="text-justify") Tenemos distintas vacantes las cuales puedes aplicar directamente en
-              | nuestro sitio ú obtener más información de ellas contactando por este medio o nuestras redes sociales. 
+              |  nuestro sitio u obtener más información de ellas contactando por este medio o nuestras redes sociales. 
             button(class="snip1582") Ver vacantes
 
 </template>

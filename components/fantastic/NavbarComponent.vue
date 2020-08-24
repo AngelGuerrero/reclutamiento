@@ -2,7 +2,7 @@
   .nav__wrapper
     .nav__hamburguer.dev
       b-icon(icon="justify-left" class="h2 mb-0")
-    .logo.dev
+    //- .logo.dev
       img(class="logo__img" src="~assets/images/logo/logo.png", alt="alt")
     ul(class="snip1555 nav__items dev")
       li
@@ -28,7 +28,7 @@
   // presentation
   font-family: 'Baloo Tamma 2', cursive;
   font-size: 18px;
-  background-color: rgba(244, 244, 255, 0.87);
+  // background-color: rgba(244, 244, 255, 0.87);
   &:hover {
     background-color: white;
   }
