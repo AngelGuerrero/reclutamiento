@@ -7,7 +7,7 @@
           img(class="about__image align-self-center mb-3" src="~assets/images/aboutus.svg", alt="AboutUs")
         b-col(class="dev d-flex align-items-center col-12 col-lg-6")
           .box__description(class="shadow-lg")
-            h3.mb-3 ¿Quénes somos?
+            h3.mb-3 ¿Quiénes somos?
             p.box__text Somos un grupo de emprendedores que iniciamos en el área de reclutamiento de campo, 
               | y decidimos llevar las cosas a un próximo nivel para aumentar nuestro rendimiento,
               | la confiabilidad, la eficiencia y la efectividad en nuestros servicios, automatizando
