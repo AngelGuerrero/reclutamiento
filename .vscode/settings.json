@@ -1,6 +1,5 @@
 {
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "prettier.endOfLine": "auto",
   "files.eol": "\n"
 }

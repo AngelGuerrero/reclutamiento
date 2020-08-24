@@ -8,6 +8,15 @@
       ],
       "label": "npm: dev",
       "detail": "nuxt"
+    },
+    {
+      "type": "npm",
+      "script": "lint:js",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ],
+      "label": "npm: lint:js",
+      "detail": "eslint --ext .js,.vue --ignore-path .gitignore ."
     }
   ]
 }

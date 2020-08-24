@@ -1,21 +1,23 @@
 <template lang="pug">
   .nav__wrapper
-    .nav__hamburguer(@click="showAsideMenu = !showAsideMenu")
+    .nav__hamburguer(@click="close()")
       b-icon(icon="justify-left" class="h1 mb-0")
     ul(class="snip1555 nav__items dev")
       li(v-for="link in menu" :key="link.id")
         nuxt-link(:to="link.route" class="nav__item") {{ link.title }}
     //- Aside navbar
-    .backgrop(v-show="showAsideMenu" @click="showAsideMenu = !showAsideMenu")
+    .backgrop(v-show="showAsideMenu" @click="close()")
     .aside_navbar(v-if="showAsideMenu")
       .aside__header(class="d-flex align-items-center mb-3")
         h2.header__title(class="flex-grow-1 pl-3 mb-0 mx-auto") Menú
-        .btn--close(@click="showAsideMenu = !showAsideMenu"
+        .btn--close(@click="close()"
                     class="p-3 d-flex justify-content-center align-items-center bg-dark color-white")
           b-icon(icon="x" class="h2 mb-0")
       b-container
         ul(class="snip1555 d-flex flex-column m-0 p-0 w-100")
-          li(v-for="link in menu" :key="link.id" class="nav__item--mobile")
+          li(v-for="link in menu"
+            :key="link.id" class="nav__item--mobile"
+            @click="close()")
             nuxt-link(:to="link.route") {{ link.title }}
 </template>
 
@@ -23,7 +25,7 @@
 export default {
   data() {
     return {
-      showAsideMenu: true,
+      showAsideMenu: false,
       menu: [
         { title: 'Inicio', route: '/' },
         { title: 'Nosotros', route: '/#nosotros' },
@@ -33,6 +35,12 @@ export default {
         { title: 'Acceso', route: '/login' },
       ],
     }
+  },
+
+  methods: {
+    close() {
+      this.showAsideMenu = !this.showAsideMenu
+    },
   },
 }
 </script>
