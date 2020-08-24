@@ -1,22 +1,41 @@
 <template lang="pug">
   .nav__wrapper
-    .nav__hamburguer.dev
-      b-icon(icon="justify-left" class="h2 mb-0")
-    //- .logo.dev
-      img(class="logo__img" src="~assets/images/logo/logo.png", alt="alt")
+    .nav__hamburguer(@click="showAsideMenu = !showAsideMenu")
+      b-icon(icon="justify-left" class="h1 mb-0")
     ul(class="snip1555 nav__items dev")
-      li
-        a(href="#" class="nav__item") Nosotros
-      li
-        a(href="#" class="nav__item") Servicios
-      li
-        a(href="#" class="nav__item") Vacantes
-      li
-        a(href="#" class="nav__item") Contacto
-      li
-        a(href="#" class="nav__item") Acceso
-
+      li(v-for="link in menu" :key="link.id")
+        nuxt-link(:to="link.route" class="nav__item") {{ link.title }}
+    //- Aside navbar
+    .backgrop(v-show="showAsideMenu" @click="showAsideMenu = !showAsideMenu")
+    .aside_navbar(v-if="showAsideMenu")
+      .aside__header(class="d-flex align-items-center mb-3")
+        h2.header__title(class="flex-grow-1 pl-3 mb-0 mx-auto") Menú
+        .btn--close(@click="showAsideMenu = !showAsideMenu"
+                    class="p-3 d-flex justify-content-center align-items-center bg-dark color-white")
+          b-icon(icon="x" class="h2 mb-0")
+      b-container
+        ul(class="snip1555 d-flex flex-column m-0 p-0 w-100")
+          li(v-for="link in menu" :key="link.id" class="nav__item--mobile")
+            nuxt-link(:to="link.route") {{ link.title }}
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showAsideMenu: true,
+      menu: [
+        { title: 'Inicio', route: '/' },
+        { title: 'Nosotros', route: '/#nosotros' },
+        { title: 'Servicios', route: '/#servicios' },
+        { title: 'Vacantes', route: '/vacantes' },
+        { title: 'Contacto', route: '/#contacto' },
+        { title: 'Acceso', route: '/login' },
+      ],
+    }
+  },
+}
+</script>
 
 <style lang="scss">
 .nav__wrapper {
@@ -28,14 +47,13 @@
   // presentation
   font-family: 'Baloo Tamma 2', cursive;
   font-size: 18px;
-  // background-color: rgba(244, 244, 255, 0.87);
   &:hover {
     background-color: white;
   }
-  // breackpoints
+  // breakpoints
   @include media-screen-lg {
-    display: flex;
-    justify-content: space-around;
+    // display: flex;
+    // justify-content: space-around;
   }
 
   .nav__hamburguer {
@@ -97,5 +115,44 @@
   @include media-screen-md {
     display: none;
   }
+}
+
+.aside_navbar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #0110b3;
+  color: white;
+}
+
+.backgrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+}
+
+.nav__item--mobile {
+  width: 40%;
+  a {
+    transition: color 0.5s;
+    &:hover {
+      color: #fce40d;
+    }
+  }
+}
+
+.header__title {
+  color: #fce40d;
+}
+
+.btn--close {
+  cursor: pointer;
 }
 </style>

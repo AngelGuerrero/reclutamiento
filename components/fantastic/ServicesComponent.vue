@@ -1,5 +1,5 @@
 <template lang="pug">
-  .services__wrapper
+  .services__wrapper(id="servicios")
     .services__content(class="container d-flex flex-column justify-content-center")
       .services__header
         h1.services__title(class="dev mb-4") Servicios
@@ -44,9 +44,10 @@
 
 <style lang="scss" scoped>
 .services__wrapper {
+  padding-top: 30px;
+  margin-bottom: 100px;
   background-color: #0110b3;
   color: white;
-  margin-bottom: 100px;
 }
 
 .services__content {

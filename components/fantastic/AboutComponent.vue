@@ -1,9 +1,9 @@
 <template lang="pug">
-  .about__wrapper(class="d-flex justify-content-center align-items-center")
+  .about__wrapper(id="nosotros" class="d-flex justify-content-center align-items-center")
     b-container(class="dev h-100")
       b-row.dev
         b-col(class="dev d-flex flex-column justify-content-center col-12 col-lg-6")
-          h1(class="about__title title--square") Nosotros
+          h1(id="nosotros" class="about__title title--square") Nosotros
           img(class="about__image align-self-center mb-3" src="~assets/images/aboutus.svg", alt="AboutUs")
         b-col(class="dev d-flex align-items-center col-12 col-lg-6")
           .box__description(class="shadow-lg")
